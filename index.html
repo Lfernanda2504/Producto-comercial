@@ -19,26 +19,26 @@
   </head>
   <body>
     <header id="header">
-      <nav id="nav-bar" class="navbar navbar bg-light">
+      <nav id="nav-bar" class="navbar navbar">
         <div class="header-img">
-          <img src="img/logo.png" class="rounded-circle" alt="the World of guitar" />
-          <a class="nav-link" href="#">
+          <img src="img/logo.ico" class="rounded-circle" alt="the World of guitar" />
+          <a class="nav-link" href="#home"> </a>
         </div>
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Clasicas</a>
+            <a class="nav-link active" href="#clasica">Clasica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Acusticas</a>
+            <a class="nav-link" href="#acustica">Acustica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Electricas</a>
+            <a class="nav-link" href="#">Electrica</a>
           </li>
         </ul>
       </nav>
     </header>
-    
-    <form action="https://www.freecodecamp.com/email-submit">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h2>Para mas información ingresa tu cuenta</h2>
       <div class="form-group">
         <label for="email">Email</label>
         <input
@@ -50,19 +50,79 @@
           placeholder="qth245@um.es"
           required
         />
-        <small id="emailHelpId" class="form-text text-muted">Help text</small>
       </div>
       <div class="form-group">
-        <button type="submit" id="submit" class="btn btn-primary">
+        <button type="submit" id="submit" class="btn btn-dark">
           Enviar
         </button>
       </div>
     </form>
-    <div class="col-md">
-      <h1></h1>
-      <div id="video"></div>
-    </div>
+    <section id="home" class="container">
+      <h1>¿Que es una guitarra?</h1>
+      <p>Se trata de un instrumento de cuerda que cuenta con una caja de resonancia,
+         por donde emite el sonido, también cuenta con un mástil donde se puede afinar las cuerdas. La guitarra clásica posee seis cuerdas que suenan al ser rosadas o punteadas con una púa o con los dedos,
+         hay casos de personas que pueden hacer sonar notas armonios con los dedos de los pies.</p>
 
+      <h1> Diferentes tipos de guitarra</h1>
+      <p><br>  Guitarra clásica
+      <br>  Guitarra acústica
+      <br>  Guitarra flamenca
+      <br>  Guitarra eléctrica
+      <br>  Guitarra electroacústica
+      <br>  Guitarra MIDI
+      <br>  Guitarra italiana
+      <br>  Guitarra renacentista
+      <br>  Guitarra barroca 
+      <br>  Guitarra Rusa </p>
+      <div class="col-md">
+        <h1>Instrumental con diferentes guitarras</h1>
+        <div id="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HxYVUod9YP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <section id="clasica" class="container">
+      <h1>Guitarra Clásica</h1>
+      Es la que comúnmente se denomina guitarra española. Estos tipos de guitarra no poseen trastes marcados, y es elaborada 
+      con maderas finas para que se proyecte de manera perfecta su sonido a través de la caja de resonancia.
+      <h1>Caracteristicas de una guitarra clasica</h1>
+      <div class="container">
+        <div class="row">
+          <div class="img-content"><img src="/img/guitar-pick.png"/></div>
+          <div class="col">
+            La guitarra clásica tiene seis cuerdas afinadas, 
+            yendo de lo grave a lo agudo.
+          </div>
+          <div class="img-content"><img src="/img/mixer.png"/></div>
+          <div class="col">
+            La guitarra tiene una caja de resonancia chata, con forma de ocho, una boca o 
+            abertura de resonancia en la tapa armónica.
+          </div>
+          <div class="img-content"><img src="/img/cuerdas.png"/></div>
+          <div class="col">
+            El mástil va provisto de un diapasón con diecinueve trastes, generalmente metálico
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="acustica">
+     <div class="container">
+      <h1> Guitarra Acustica</h1>
+       <div class="row">
+        <div class="col">
+          <p>Estos tipos de guitarra utilizan cuerdas elaboradas con nylon y alambre generalmente, pero las hay elaboradas sólo de metal.
+            Se les llama guitarra acústica, del idioma inglés Acoustic guitar. Este término es utilizado para diferenciar la guitarra de caja con la guitarra eléctrica, 
+          a pesar de que la guitarra es un instrumento acústico por definición.
+          Esta guitarra fue creada por lutieres estadounidenses a finales del siglo XIX, conocidas como western guitars.
+          Además, se les llama acústica porque no necesitan ningún tipo de amplificación para ejecutarlas.</p>
+          </div>
+       </div>
+       <div class="col"> 
+         <img class="col"id="cuerdas" src="/img/guitar.jpg"/>
+       </div>
+      </div>
+    </section>
   </body>
 
   <script>
