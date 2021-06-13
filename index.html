@@ -32,16 +32,17 @@
             <a class="nav-link" href="#acustica">Acustica</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Electrica</a>
+            <a class="nav-link" href="#electrica">Electrica</a>
           </li>
         </ul>
       </nav>
     </header>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <h2>Para mas información ingresa tu cuenta</h2>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input
+      <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label"><strong>Email</strong></label>
+        <div class="col-sm-10">
+          <input
           type="email"
           id="email"
           name="email"
@@ -50,6 +51,7 @@
           placeholder="qth245@um.es"
           required
         />
+        </div>
       </div>
       <div class="form-group">
         <button type="submit" id="submit" class="btn btn-dark">
@@ -62,49 +64,65 @@
       <p>Se trata de un instrumento de cuerda que cuenta con una caja de resonancia,
          por donde emite el sonido, también cuenta con un mástil donde se puede afinar las cuerdas. La guitarra clásica posee seis cuerdas que suenan al ser rosadas o punteadas con una púa o con los dedos,
          hay casos de personas que pueden hacer sonar notas armonios con los dedos de los pies.</p>
-
-      <h1> Diferentes tipos de guitarra</h1>
-      <p><br>  Guitarra clásica
-      <br>  Guitarra acústica
-      <br>  Guitarra flamenca
-      <br>  Guitarra eléctrica
-      <br>  Guitarra electroacústica
-      <br>  Guitarra MIDI
-      <br>  Guitarra italiana
-      <br>  Guitarra renacentista
-      <br>  Guitarra barroca 
-      <br>  Guitarra Rusa </p>
-      <div class="col-md">
-        <h1>Instrumental con diferentes guitarras</h1>
-        <div id="video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/HxYVUod9YP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </iframe>
-        </div>
+      <div class="gray_area">
+          <div class="container">
+            <h1> Diferentes tipos de guitarra</h1>
+              <div class="row">
+                  <div class="col-md-6">
+                  <!-- VIDEO LEFT TITLE -->
+                      <div class="video_title">
+                          <p><br>  Guitarra clásica
+                            <br>  Guitarra acústica
+                            <br>  Guitarra flamenca
+                            <br>  Guitarra eléctrica
+                            <br>  Guitarra electroacústica
+                            <br>  Guitarra MIDI
+                            <br>  Guitarra italiana
+                            <br>  Guitarra renacentista
+                            <br>  Guitarra barroca 
+                            <br>  Guitarra Rusa </p>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                       <!-- VIDEO -->
+                      <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HxYVUod9YP4" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </section>
+</section>
     <section id="clasica" class="container">
       <h1>Guitarra Clásica</h1>
       Es la que comúnmente se denomina guitarra española. Estos tipos de guitarra no poseen trastes marcados, y es elaborada 
       con maderas finas para que se proyecte de manera perfecta su sonido a través de la caja de resonancia.
-      <h1>Caracteristicas de una guitarra clasica</h1>
-      <div class="container">
-        <div class="row">
-          <div class="img-content"><img src="/img/guitar-pick.png"/></div>
-          <div class="col">
-            La guitarra clásica tiene seis cuerdas afinadas, 
-            yendo de lo grave a lo agudo.
-          </div>
-          <div class="img-content"><img src="/img/mixer.png"/></div>
-          <div class="col">
-            La guitarra tiene una caja de resonancia chata, con forma de ocho, una boca o 
-            abertura de resonancia en la tapa armónica.
-          </div>
-          <div class="img-content"><img src="/img/cuerdas.png"/></div>
-          <div class="col">
-            El mástil va provisto de un diapasón con diecinueve trastes, generalmente metálico
-          </div>
-        </div>
-      </div>
+      
+      <section id="clasica">
+        <div class="container">
+            <div class="clasica_title">
+                   <h1>Caracteristicas de una guitarra clasica</h1>
+            </div>
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <img class="rounded-circle" src="/img/guitar-pick.png"/>
+                        <p>La guitarra clásica tiene seis cuerdas afinadas, 
+                          yendo de lo grave a lo agudo.</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 text-center">
+                        <img class="rounded-circle" src="/img/mixer.png">
+                        <p> La guitarra tiene una caja de resonancia chata, con forma de ocho, una boca o 
+                          abertura de resonancia en la tapa armónica.</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 text-center">
+                        <img class="rounded-circle" src="/img/cuerdas.png">
+                        <p>El mástil va provisto de un diapasón con diecinueve trastes, generalmente metálico.</p>
+                    </div><!-- /.col-lg-4 -->
+                </div> 
+        </section>
     </section>
     <section id="acustica">
      <div class="container">
@@ -123,8 +141,27 @@
        </div>
       </div>
     </section>
+    <section id="electrica">
+      <div class="container text-center">
+       <h1> Guitarra electrica</h1>
+        <div class="row">
+         <div class="col-md-8 col-xs-6 col-sm-3 text-left">
+          es un tipo de guitarra, que a diferencia de la guitarra española y la guitarra 
+          acústica, su caja no hace resonancia, ya que esta es por inducción eléctrica a través de un Amplificador de guitarra o también a través de un Pedal de efectos. El sonido de la guitarra se verá influido por el diseño y ubicación de las pastillas, la escala y en menor medida por el puente y la cejilla, 
+          el uso de los círculos de la escala modificará el sonido de cada una de sus cuerdas.Dado que la señal generada es relativamente débil, esta se amplifica antes de enviarla a un altavoz. Esta señal de salida de la guitarra eléctrica puede ser fácilmente alterada mediante circuitos electrónicos para modificar algunos aspectos del sonido. A menudo, la señal se modifica con efectos como reverberación y la distorsión.</p>
+           </div>
+           <div class="col-xs-8 col-xs-6 col-sm-3"> 
+            <img class="rounded-circle" id="cuerdas" src="/img/electrica.jpg"/>
+          </div>
+        </div>
+       </div>
+     </section>
   </body>
-
+  <ul>
+  <footer>
+    Privacy  | Terms |Contact
+  <span>Copyright 2021, The world of guitar</span>
+</footer>
   <script>
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
